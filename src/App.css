@@ -1,0 +1,58 @@
+.App {
+  text-align: center;
+  color: white;
+}
+
+.background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.App-header {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 20vh;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #61dafb;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #21a1f1;
+}
+
+.planet-info {
+  margin-top: 20px;
+}
+
+.planet-image {
+  max-width: 300px;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+p {
+  white-space: pre-wrap; /* Pour respecter les sauts de ligne dans la description */
+}
