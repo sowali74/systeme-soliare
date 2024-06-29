@@ -17,7 +17,9 @@
   padding: 20px;
   border-radius: 10px;
   display: inline-block;
-  margin-top: 20vh;
+  margin-top: 10vh; /* Adjusted for better mobile view */
+  max-width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 input {
@@ -26,6 +28,7 @@ input {
   border: none;
   border-radius: 5px;
   margin-right: 10px;
+  margin-top: 10px;
 }
 
 button {
@@ -36,6 +39,7 @@ button {
   background-color: #61dafb;
   color: white;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 button:hover {
@@ -47,12 +51,47 @@ button:hover {
 }
 
 .planet-image {
-  max-width: 300px;
+  max-width: 100%;
   height: auto;
   margin-top: 20px;
   border-radius: 10px;
 }
 
-p {
-  white-space: pre-wrap; /* Pour respecter les sauts de ligne dans la description */
+.photo-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.profile-photo {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.contact-info {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+  .App-header {
+    margin-top: 5vh;
+    padding: 15px;
+  }
+
+  input, button {
+    width: 80%;
+    margin-top: 5px;
+  }
+
+  .planet-image {
+    max-width: 80%;
+  }
+
+  .photo-container {
+    margin-top: 10px;
+  }
+
+  .profile-photo {
+    width: 100px;
+  }
 }
