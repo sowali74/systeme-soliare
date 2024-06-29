@@ -55,7 +55,19 @@ function App() {
         Your browser does not support the video tag.
       </video>
       <header className="App-header">
-        <h1>Explorez le Système Solaire</h1>
+        <h1>Bienvenue dans l'univers de COSMOSSIENNE 🌌</h1>
+        <p>
+          Bonjour ! Je m'appelle Ali SOW. Je suis ravi de te présenter mon application COSMOSSIENNE, une porte d'entrée fascinante vers les mystères du système solaire.
+        </p>
+        <p>
+          Si, comme moi, tu es passionné par les merveilles de l'univers, alors tu es au bon endroit ! Ton intérêt pour l'exploration des planètes fait de toi quelqu'un de vraiment spécial.
+        </p>
+        <p>
+          Prêt à embarquer pour un voyage cosmique ? Choisis l'une des planètes ci-dessous et plonge-toi dans l'aventure :
+        </p>
+        <div className="planet-list">
+          Mercure 🪐 Vénus 🌟 Terre 🌍 Mars 🚀 Jupiter 🌪️ Saturne 💫 Uranus ❄️ Neptune 🌊
+        </div>
         <input
           type="text"
           placeholder="Entrez le nom d'une planète"
@@ -69,6 +81,13 @@ function App() {
             <p>{planetData.description}</p>
           </div>
         )}
+        <div className="contact-info">
+          <p>Si tu trouves cette application mignonne, fais-le moi savoir sur WhatsApp <strong>0745319799</strong></p>
+        </div>
+        <div className="photo-container">
+          <img src="photo.png" alt="Ali SOW" className="profile-photo" />
+          <p>Ali SOW</p>
+        </div>
       </header>
     </div>
   );
