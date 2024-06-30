@@ -51,7 +51,7 @@ function App() {
   return (
     <div className="App">
       <video autoPlay loop muted className="background-video">
-        <source src="https://cdn.leonardo.ai/users/bcb8c2a4-8718-4560-af80-ee111c2226a9/generations/29d5fe10-0259-4c23-80ab-550ee6a0e529/29d5fe10-0259-4c23-80ab-550ee6a0e529.mp4" type="video/mp4" />
+        <source src="https://cdn.leonardo.ai/users/bcb8c2a4-8718-4560-af80-ee111c2226a9/generations/643db157-a591-4a10-b6d4-5119fccbeb33/643db157-a591-4a10-b6d4-5119fccbeb33.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <header className="App-header">
@@ -77,10 +77,7 @@ function App() {
         <button onClick={handleSearch}>Rechercher</button>
         {planetData && (
           <div className="planet-info">
-            <video autoPlay loop muted className="planet-video">
-              <source src={planetData.image} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <img src={planetData.image} alt={planet} className="planet-image" />
             <p>{planetData.description}</p>
           </div>
         )}
@@ -88,7 +85,7 @@ function App() {
           <p>Si tu trouves cette application mignonne, fais-le moi savoir sur WhatsApp <strong>0745319799</strong></p>
         </div>
         <div className="photo-container">
-          <video autoPlay loop muted className="profile-photo">
+          <video autoPlay loop muted className="profile-video">
             <source src="https://cdn.leonardo.ai/users/bcb8c2a4-8718-4560-af80-ee111c2226a9/generations/29d5fe10-0259-4c23-80ab-550ee6a0e529/29d5fe10-0259-4c23-80ab-550ee6a0e529.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
