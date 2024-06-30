@@ -82,7 +82,7 @@ function App() {
           </div>
         )}
         <div className="contact-info">
-          <p>Si tu trouves cette application mignonne, fais moi des coeurs sur WhatsApp <strong>0745319799</strong></p>
+          <p>Si tu trouves cette application mignonne, fais-le moi savoir sur WhatsApp <strong>0745319799</strong></p>
         </div>
         <div className="photo-container">
           <img src="https://cdn.leonardo.ai/users/bcb8c2a4-8718-4560-af80-ee111c2226a9/generations/29d5fe10-0259-4c23-80ab-550ee6a0e529/29d5fe10-0259-4c23-80ab-550ee6a0e529.mp4" alt="Ali SOW" className="profile-photo" />
