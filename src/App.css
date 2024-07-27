@@ -1,97 +1,182 @@
-.App {
-  text-align: center;
-  color: white;
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-.background-video {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.App-header {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 20px;
-  border-radius: 10px;
-  display: inline-block;
-  margin-top: 10vh; /* Adjusted for better mobile view */
-  max-width: 90%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
 }
 
-input {
-  padding: 10px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  margin-right: 10px;
-  margin-top: 10px;
+header h1 {
+    margin: 0;
+    text-align: center;
 }
 
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  background-color: #61dafb;
-  color: white;
-  cursor: pointer;
-  margin-top: 10px;
+header nav {
+    text-align: center;
 }
 
-button:hover {
-  background-color: #21a1f1;
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.planet-info {
-  margin-top: 20px;
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-.planet-image {
-  max-width: 100%;
-  height: auto;
-  margin-top: 20px;
-  border-radius: 10px;
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
 }
 
-.photo-container {
-  margin-top: 20px;
-  text-align: center;
+.nav-photo {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    height: auto;
 }
 
-.profile-photo {
-  width: 150px;
-  border-radius: 50%;
+/* Section Styles */
+section {
+    padding: 20px 0;
 }
 
-.contact-info {
-  margin-top: 20px;
-  font-size: 1.2em;
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-@media (max-width: 768px) {
-  .App-header {
-    margin-top: 5vh;
-    padding: 15px;
-  }
+/* Service Section */
+.service {
+    margin-bottom: 40px;
+}
 
-  input, button {
-    width: 80%;
-    margin-top: 5px;
-  }
+.service h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
 
-  .planet-image {
-    max-width: 80%;
-  }
+.service p {
+    margin-bottom: 10px;
+}
 
-  .photo-container {
-    margin-top: 10px;
-  }
+.service-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
-  .profile-photo {
-    width: 100px;
-  }
+.service-images img {
+    width: 100%;
+    max-width: 300px; /* Ajuster selon les besoins */
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease, filter 0.5s ease;
+}
+
+.service-images img:hover {
+    transform: scale(1.2) rotate(10deg); /* Zoom et rotation au survol */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Ombre portée plus marquée */
+    filter: brightness(1.2); /* Augmente la luminosité de l'image */
+}
+
+/* Gallery Section */
+#gallery {
+    background: #f4f4f4;
+    overflow: hidden; /* Masquer les parties qui dépassent */
+    padding: 20px 0;
+}
+
+.gallery-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-slide {
+    display: flex;
+    flex: 1 0 auto;
+    white-space: nowrap; /* Empêcher le retour à la ligne */
+    animation: scroll 30s linear infinite; /* Animation de défilement */
+}
+
+.gallery-item {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.gallery-item img {
+    width: 300px; /* Largeur fixe pour chaque image */
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Testimonials Section */
+.testimonial {
+    margin-bottom: 20px;
+}
+
+/* Contact Form */
+form {
+    display: grid;
+    gap: 10px;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+form button:hover {
+    background: #555;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
 }
